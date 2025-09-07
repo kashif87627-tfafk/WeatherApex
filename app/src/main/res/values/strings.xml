@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">WeatherApex</string>
     <string name="weather">Weather</string>
+    <string name="weatherapex">WeatherApex</string>
 </resources>
