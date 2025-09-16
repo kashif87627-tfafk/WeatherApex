@@ -1,4 +1,5 @@
-package network;
+package com.example.weatherapex.network;
+
 
 import com.example.weatherapex.models.WeatherResponse;
 import retrofit2.Call;

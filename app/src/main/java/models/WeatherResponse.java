@@ -1,16 +1,47 @@
-package models;
+package com.example.weatherapex.models;
+
+import com.google.gson.annotations.SerializedName;
 
 public class WeatherResponse {
-    public Main main;
-    public Wind wind;
-    public String name;
 
-    public class Main {
-        public float temp;
-        public int humidity;
+    @SerializedName("name")
+    private String cityName;
+
+    @SerializedName("main")
+    private Main main;
+
+    @SerializedName("weather")
+    private Weather[] weather;
+
+    public String getCityName() {
+        return cityName;
     }
 
-    public class Wind {
-        public float speed;
+    public Main getMain() {
+        return main;
+    }
+
+    public Weather[] getWeather() {
+        return weather;
+    }
+
+    // inner class for "main"
+    public class Main {
+        @SerializedName("temp")
+        private double temp;
+
+        public double getTemp() {
+            return temp;
+        }
+    }
+
+    // inner class for "weather"
+    public class Weather {
+        @SerializedName("description")
+        private String description;
+
+        public String getDescription() {
+            return description;
+        }
     }
 }
