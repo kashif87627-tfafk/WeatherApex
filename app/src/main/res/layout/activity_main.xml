@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView"
@@ -10,7 +10,6 @@
         android:src="@drawable/weatherbgg"
         android:scaleType="centerCrop"
         android:adjustViewBounds="true" />
-
 
     <TextView
         android:id="@+id/textView"
@@ -22,7 +21,7 @@
         android:background="@drawable/edittext_glass"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"/>
+        android:layout_marginTop="45dp" />
 
     <EditText
         android:id="@+id/cityName"
@@ -35,11 +34,10 @@
         android:padding="14dp"
         android:textColorHint="#FFEB3B"
         android:textColor="@android:color/white"
-        android:textSize="45dp"
+        android:textSize="20sp"
         android:textAlignment="center"
-        android:elevation="8dp"/>
+        android:elevation="8dp" />
 
-    <!-- Search Button -->
     <Button
         android:id="@+id/search"
         android:layout_width="180dp"
@@ -53,6 +51,20 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:padding="14dp"
-        android:elevation="10dp"/>
+        android:elevation="10dp" />
+
+    <!-- Weather Result TextView -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Weather info will appear here"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:background="@drawable/edittext_glass" />
 
 </RelativeLayout>
