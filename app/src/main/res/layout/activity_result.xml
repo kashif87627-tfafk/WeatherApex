@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weatherbgg"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather details will appear here"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/edittext_glass"
+        android:padding="20dp"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
