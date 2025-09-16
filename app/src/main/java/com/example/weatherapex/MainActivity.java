@@ -13,6 +13,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fetchWeather(String city) {
-        String apiKey = "3b44ccd69cb5838f3f5849f7322ff4b5";
+        String apiKey = "api key here";
 
         String url = "https://api.openweathermap.org/data/2.5/weather?q="
                 + city + "&appid=" + apiKey + "&units=metric";
