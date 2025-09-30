@@ -1,11 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-
-    <!-- Normal app theme -->
     <style name="Theme.WeatherApex" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- your existing stuff -->
+
     </style>
 
-    <!-- Splash screen theme -->
     <style name="Theme.WeatherApex.Splash" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/appsplash</item>
     </style>
