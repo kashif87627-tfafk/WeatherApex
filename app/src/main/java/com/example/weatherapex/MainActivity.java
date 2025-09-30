@@ -1,9 +1,9 @@
 package com.example.weatherapex;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -11,8 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -23,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText cityName;
     private Button searchButton;
-    private TextView textViewResult;
     private RequestQueue requestQueue;
 
     @Override
@@ -35,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         // Initialize UI components
         cityName = findViewById(R.id.cityName);
         searchButton = findViewById(R.id.search);
-        textViewResult = findViewById(R.id.textViewResult);
 
         // Initialize Volley request queue
         requestQueue = Volley.newRequestQueue(this);
@@ -47,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             if (!city.isEmpty()) {
                 fetchWeather(city);
             } else {
-                textViewResult.setText("⚠️ Please enter a city name!");
+                Toast.makeText(MainActivity.this, "⚠️ Please enter a city name!", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -68,12 +64,17 @@ public class MainActivity extends AppCompatActivity {
                         JSONObject weather = response.getJSONArray("weather").getJSONObject(0);
                         String condition = weather.getString("description");
 
-                        // Format result
+                        /// Prepare result string
                         String resultText = "🌍 City: " + city + "\n" +
                                 "🌡️ Temperature: " + temperature + "°C\n" +
                                 "⛅ Condition: " + condition;
 
-                        textViewResult.setText(resultText);
+
+                        Intent intent = new Intent(MainActivity.this, WeatherResultActivity.class);
+                        intent.putExtra("weather_result", resultText);
+                        intent.putExtra("weather_condition", condition.toLowerCase()); // send condition
+                        startActivity(intent);
+
 
                     } catch (JSONException e) {
                         e.printStackTrace();
