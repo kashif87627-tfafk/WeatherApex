@@ -23,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp" />
 
-    <EditText
+    <AutoCompleteTextView
         android:id="@+id/cityName"
         android:layout_width="270dp"
         android:layout_height="72dp"
@@ -37,6 +37,7 @@
         android:textSize="20sp"
         android:textAlignment="center"
         android:elevation="8dp" />
+
 
     <Button
         android:id="@+id/search"

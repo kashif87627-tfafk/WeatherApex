@@ -2,4 +2,6 @@
     <string name="app_name">WeatherApex</string>
     <string name="weather">Weather</string>
     <string name="weatherapex">WeatherApex</string>
+    <string name="city_country">City, Country</string>
+    <string name="temperature_info">🌡️ Temperature Info</string>
 </resources>

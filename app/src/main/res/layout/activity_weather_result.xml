@@ -2,6 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Background image changes according to weather -->
     <ImageView
         android:id="@+id/resultBg"
         android:layout_width="match_parent"
@@ -9,17 +10,85 @@
         android:scaleType="centerCrop"
         android:adjustViewBounds="true" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/resultText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:padding="20dp"
-        android:text="Weather Result"
-        android:textSize="22sp"
-        android:textColor="@android:color/white"
-        android:background="@drawable/edittext_glass"
-        android:textAlignment="center" />
+        <LinearLayout
+            android:id="@+id/weatherContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/edittext_glass"
+            android:padding="16dp"
+            android:elevation="6dp">
 
+            <TextView
+                android:id="@+id/cityCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city_country"
+                android:textSize="22sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tempInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_info"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/weatherCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⛅ Condition"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/humidityPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💧 Humidity &amp; Pressure"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/windClouds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌬️ Wind &amp; Clouds"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/visibilitySunriseSunset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👁️ Visibility / 🌅 Sunrise / 🌇 Sunset"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/coordinates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍 Coordinates"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:paddingBottom="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
