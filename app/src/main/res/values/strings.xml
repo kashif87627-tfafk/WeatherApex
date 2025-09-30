@@ -4,4 +4,10 @@
     <string name="weatherapex">WeatherApex</string>
     <string name="city_country">City, Country</string>
     <string name="temperature_info">🌡️ Temperature Info</string>
+    <string name="enter_city">Enter City</string>
+    <string name="condition">⛅ Condition</string>
+    <string name="humidity_amp_pressure"><![CDATA[💧 Humidity & Pressure]]></string>
+    <string name="wind_amp_clouds"><![CDATA[🌬️ Wind & Clouds]]></string>
+    <string name="visibility_sunrise_sunset">👁️ Visibility / 🌅 Sunrise / 🌇 Sunset</string>
+    <string name="coordinates">📍 Coordinates</string>
 </resources>

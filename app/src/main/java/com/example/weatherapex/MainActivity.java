@@ -34,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
         Button searchButton = findViewById(R.id.search);
 
         requestQueue = Volley.newRequestQueue(this);
-        String[] cities = {"Hyderabad, IN", "Mumbai, IN", "Delhi, IN", "London, UK", "New York, USA"};
+        String[] cities = {"Hyderabad, IN", "Mumbai, IN", "Delhi, IN", "Bengaluru, IN", "Chennai, IN",
+                "Kolkata, IN", "Pune, IN", "Ahmedabad, IN", "Jaipur, IN", "Lucknow, IN", "Chandigarh, IN", "Bhopal, IN", "Indore, IN", "Nagpur, IN", "Surat, IN", "Patna, IN", "Varanasi, IN", "Amritsar, IN",
+                "Goa, IN", "Thiruvananthapuram, IN", "Kochi, IN", "London, UK", "Paris, FR", "Berlin, DE", "Rome, IT", "Madrid, ES", "New York, USA", "Los Angeles, USA", "Chicago, USA", "Toronto, CA", "Vancouver," +
+                " CA", "Sydney, AU", "Melbourne, AU", "Tokyo, JP", "Osaka, JP", "Seoul, KR", "Beijing, CN", "Shanghai, CN", "Singapore, SG", "Dubai, AE"};
+
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_dropdown_item_1line, cities);

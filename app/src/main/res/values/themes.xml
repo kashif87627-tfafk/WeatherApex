@@ -1,9 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.WeatherApex" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!-- Normal app theme -->
+    <style name="Theme.WeatherApex" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- your existing stuff -->
     </style>
 
-    <style name="Theme.WeatherApex" parent="Base.Theme.WeatherApex" />
+    <!-- Splash screen theme -->
+    <style name="Theme.WeatherApex.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/appsplash</item>
+    </style>
+
 </resources>

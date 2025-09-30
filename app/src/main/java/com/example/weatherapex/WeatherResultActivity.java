@@ -1,13 +1,17 @@
 package com.example.weatherapex;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Objects;
+
 public class WeatherResultActivity extends AppCompatActivity {
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +51,7 @@ public class WeatherResultActivity extends AppCompatActivity {
 
             // Set background according to weather
             // Set background according to weather
-            switch (conditionMain.toLowerCase()) {
+            switch (Objects.requireNonNull(conditionMain).toLowerCase()) {
                 case "clear":
                     resultBg.setImageResource(R.drawable.clear_bgg);
                     break;
@@ -92,7 +96,7 @@ public class WeatherResultActivity extends AppCompatActivity {
 
     private String unixToTime(long unixSeconds) {
         java.util.Date date = new java.util.Date(unixSeconds * 1000L);
-        java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("HH:mm");
+        @SuppressLint("SimpleDateFormat") java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("HH:mm");
         sdf.setTimeZone(java.util.TimeZone.getDefault());
         return sdf.format(date);
     }
