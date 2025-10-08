@@ -1,29 +1,33 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- 🌤️ Background Image -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:importantForAccessibility="no"
         android:src="@drawable/weatherbgg"
         android:scaleType="centerCrop"
-        android:adjustViewBounds="true" />
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no" />
 
+    <!-- 🌦️ App Title -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/weather"
-        android:textSize="52sp"
-        android:textStyle="bold"
-        android:background="@drawable/edittext_glass"
-        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp" />
+        android:layout_marginTop="45dp"
+        android:background="@drawable/edittext_glass"
+        android:text="@string/weather"
+        android:textColor="@color/white"
+        android:textSize="52sp"
+        android:textStyle="bold" />
 
+    <!-- 🏙️ City Name Input -->
     <AutoCompleteTextView
         android:id="@+id/cityName"
         android:layout_width="270dp"
@@ -33,13 +37,13 @@
         android:background="@drawable/edittext_glass"
         android:hint="@string/enter_city"
         android:padding="14dp"
-        android:textColorHint="#FFEB3B"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFEB3B"
+        android:textSize="20sp"
         android:elevation="8dp" />
 
-
+    <!-- 🔍 Search Button -->
     <Button
         android:id="@+id/search"
         android:layout_width="180dp"
@@ -48,13 +52,32 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_modern"
+        android:padding="14dp"
         android:text="Search City"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
         android:textSize="18sp"
-        android:padding="14dp"
+        android:textStyle="bold"
         android:elevation="10dp"
         tools:ignore="HardcodedText" />
 
+    <!-- 📍 Fetch Current Location Button -->
+    <Button
+        android:id="@+id/fetchLocation"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_modern"
+        android:drawableLeft="@drawable/ic_gps"
+        android:drawablePadding="12dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="20dp"
+        android:text="Use Current Location"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:elevation="10dp"
+        tools:ignore="HardcodedText" />
 
 </RelativeLayout>

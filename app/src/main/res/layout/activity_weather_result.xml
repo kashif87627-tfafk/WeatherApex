@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="12dp"
                 android:text="@string/condition"
-                android:textColor="#1976D2"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:gravity="center"
                 tools:ignore="TextContrastCheck" />
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="12dp"
                 android:text="@string/humidity_amp_pressure"
-                android:textColor="#1976D2"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:gravity="center"
                 tools:ignore="TextContrastCheck" />
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="12dp"
                 android:text="@string/wind_amp_clouds"
-                android:textColor="#1976D2"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:gravity="center"
                 tools:ignore="TextContrastCheck" />
