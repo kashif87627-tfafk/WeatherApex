@@ -13,6 +13,22 @@
         android:scaleType="centerCrop"
         android:adjustViewBounds="true"
         android:importantForAccessibility="no" />
+    <TextView
+        android:id="@+id/watermarkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:text="Kashif\n23311A66M8, SNIST, HYD"
+        android:textColor="@color/black"   <!-- Semi-transparent white -->
+    android:textSize="12sp"
+    android:textStyle="bold"
+    android:gravity="end"
+    android:lineSpacingExtra="2dp"
+    android:fontFamily="sans-serif-medium"
+    android:background="@android:color/transparent" />
+
 
     <!-- 🌦️ App Title -->
     <TextView
@@ -26,6 +42,7 @@
         android:textColor="@color/white"
         android:textSize="52sp"
         android:textStyle="bold" />
+
 
     <!-- 🏙️ City Name Input -->
     <AutoCompleteTextView
