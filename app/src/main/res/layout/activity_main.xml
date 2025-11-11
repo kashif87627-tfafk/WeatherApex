@@ -20,14 +20,14 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="8dp"
-        android:text="Kashif\n23311A66M8, SNIST, HYD"
-        android:textColor="@color/black"   <!-- Semi-transparent white -->
-    android:textSize="12sp"
+        android:text="@string/kashif_md_n23311a66m8_snist_hyd"
+        android:textColor="@color/black"
+        android:textSize="12sp"
     android:textStyle="bold"
     android:gravity="end"
     android:lineSpacingExtra="2dp"
     android:fontFamily="sans-serif-medium"
-    android:background="@android:color/transparent" />
+    android:background="@android:color/transparent"/>
 
 
     <!-- 🌦️ App Title -->
