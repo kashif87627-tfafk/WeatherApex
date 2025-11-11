@@ -88,7 +88,7 @@
         android:background="@drawable/button_modern"
         android:drawableLeft="@drawable/ic_gps"
         android:drawablePadding="12dp"
-        android:paddingStart="40dp"
+        android:paddingStart="45dp"
         android:paddingEnd="20dp"
         android:text="Use Current Location"
         android:textColor="@android:color/white"
