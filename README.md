@@ -1,4 +1,4 @@
-🌦️ WeatherApex – Android Weather App
+WeatherApex – Android Weather App
 
 WeatherApex is a modern Android weather application built using **Java and XML** that provides real-time weather updates for any city using the OpenWeather API. The app features a clean UI, fast API integration, and accurate weather data including temperature, humidity, and weather conditions.
 ## 🚀 Features
@@ -139,11 +139,3 @@ GitHub: [https://github.com/kashif87627-tfafk](https://github.com/kashif87627-tf
 This project is open-source and available for educational and personal use.
 
 ---
-
-Want me to also generate:
-
-* README badges (build, license, API)
-* Play Store style description
-* GitHub project description (short 2-line bio)
-
-That will make your repo look more professional for placements and portfolio.
