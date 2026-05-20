@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/resultBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/weatherContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_modern"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/cityCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="@string/city_country"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tempInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="@string/temperature_info"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/weatherCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="@string/condition"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/humidityPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="@string/humidity_amp_pressure"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/windClouds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="@string/wind_amp_clouds"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/visibilitySunriseSunset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="@string/visibility_sunrise_sunset"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/coordinates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:text="@string/coordinates"
+                android:textColor="#DD2C00"
+                android:textSize="20sp"
+                android:gravity="center"
+                tools:ignore="TextContrastCheck" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
